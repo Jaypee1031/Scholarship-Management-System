@@ -1,0 +1,72 @@
+.student-stat-card {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    border-left: 4px solid var(--qsu-green);
+}
+
+.student-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1)!important;
+}
+
+.app-type-card {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.app-type-card:hover:not(.disabled) {
+    transform: translateY(-4px);
+    border-color: var(--qsu-green);
+    box-shadow: 0 8px 16px rgba(26,107,60,0.15);
+}
+
+.app-type-card.disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    background-color: #f8f9fa;
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.step-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+.step-item.active {
+    color: var(--qsu-green);
+}
+
+.step-item.completed {
+    color: #198754;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    background: #e9ecef;
+    color: #495057;
+    margin: 0 auto 6px;
+    font-weight: bold;
+}
+
+.step-item.active .step-number {
+    background: var(--qsu-green);
+    color: #fff;
+}
+
+.step-item.completed .step-number {
+    background: #198754;
+    color: #fff;
+}

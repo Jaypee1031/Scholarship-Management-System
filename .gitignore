@@ -1,0 +1,8 @@
+﻿lib/tcpdf/config.zip
+lib/tcpdf/examples/
+lib/tcpdf/fonts/cid0*
+lib/tcpdf/fonts/uni2cid*
+*.zip
+.DS_Store
+Thumbs.db
+

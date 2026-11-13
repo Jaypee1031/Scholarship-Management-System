@@ -1,0 +1,40 @@
+.admin-card-metric {
+    border-left: 4px solid;
+    transition: transform 0.15s ease;
+}
+
+.admin-card-metric:hover {
+    transform: translateY(-2px);
+}
+
+.metric-students { border-left-color: #0d6efd; }
+.metric-applications { border-left-color: var(--qsu-green); }
+.metric-sa { border-left-color: #20c997; }
+.metric-aca { border-left-color: #6f42c1; }
+.metric-sch { border-left-color: #fd7e14; }
+.metric-pending { border-left-color: #ffc107; }
+
+.eval-panel {
+    background-color: #ffffff;
+    border: 1px solid #e3e6ed;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.table th {
+    font-weight: 600;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+@media print {
+    .sidebar, .navbar, .btn, .no-print {
+        display: none !important;
+    }
+    body {
+        background: #fff !important;
+    }
+    main {
+        padding: 0 !important;
+    }
+}
